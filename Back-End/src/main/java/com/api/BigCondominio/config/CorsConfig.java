@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://front-bigcondominios-dckeh84x9-abelfonsecas-projects.vercel.app", "https://front-bigcondominios-jp79.vercel.app/") // não pode ser * pois o security barra.
+                        .allowedOrigins("http://127.0.0.1:5500") // não pode ser * pois o security barra.
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
